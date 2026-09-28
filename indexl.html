@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>موقعي الأول</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f1a;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      margin: 0;
+    }
+    .card {
+      background: #1a1a2e;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    h1 {
+      color: #e94560;
+    }
+    .balance {
+      font-size: 30px;
+      color: #4ecca3;
+      margin: 20px 0;
+    }
+    button {
+      background: #e94560;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background: #c73650;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>مرحباً بك 👋</h1>
+    <p>هذا موقعي الأول</p>
+    <div class="balance">300 DZD</div>
+    <button onclick="showWarning()">سحب</button>
+    <button onclick="showInfo()">معلومات</button>
+  </div>
+
+  <script>
+    function showWarning() {
+      alert('⚠️ هذا موقع تعليمي فقط!\nلا يوجد سحب حقيقي.\nهكذا يخدعك المحتالون.');
+    }
+    function showInfo() {
+      alert('📚 تعلمت اليوم:\n- HTML للهيكل\n- CSS للتصميم\n- JavaScript للتفاعل');
+    }
+  </script>
+</body>
+</html>
